@@ -94,3 +94,4 @@ export VIRTUALENV_PYTHON=/usr/bin/python3
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source .aliases
