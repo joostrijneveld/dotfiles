@@ -59,7 +59,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/home/joost/bin"
+export PATH="${HOME}/bin:/usr/local/bin:/usr/bin:/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
