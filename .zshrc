@@ -68,8 +68,8 @@ source $ZSH/oh-my-zsh.sh
 PROMPT=${PROMPT/\(!.#.$\)/(!.#.%%)}
 PROMPT=${PROMPT/\%n%b/%n%b@%m}
 export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENV_PYTHON=/usr/bin/python3
-
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
