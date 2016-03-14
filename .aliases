@@ -5,3 +5,5 @@ alias open=gnome-open
 alias t=todo.sh
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+unalias gp  # this is `git push` but shadows the pari-gp binary
