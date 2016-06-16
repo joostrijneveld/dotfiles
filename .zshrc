@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/joost/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -61,6 +61,7 @@ plugins=(git)
 
 export GOPATH=$HOME/go
 export PATH="${HOME}/bin:$GOPATH/bin:/usr/local/bin:/usr/bin:/bin"
+export PATH=${HOME}/.local/bin:$PATH  # needed for pipsi
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
