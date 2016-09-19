@@ -70,7 +70,7 @@ PROMPT=${PROMPT/\(!.#.$\)/(!.#.%%)}
 PROMPT=${PROMPT/\%n%b/%n%b@%m}
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
+source `which virtualenvwrapper.sh`
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
