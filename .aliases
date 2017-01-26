@@ -7,4 +7,4 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias gdiff='git diff --no-index'
 
-unalias gp  # this is `git push` but shadows the pari-gp binary
+type gp >/dev/null 2>&1 && unalias gp  # this is `git push` but shadows the pari-gp binary
