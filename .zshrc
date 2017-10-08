@@ -67,7 +67,7 @@ export PATH=${HOME}/.local/bin:$PATH  # needed for pipsi
 source $ZSH/oh-my-zsh.sh
 
 PROMPT=${PROMPT/\(!.#.$\)/(!.#.%%)}
-PROMPT=${PROMPT/\%n%b/%n%b@%m}
+export PROMPT=${PROMPT/\%n%b/%n%b@%m}
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source `which virtualenvwrapper.sh`
@@ -97,3 +97,11 @@ source `which virtualenvwrapper.sh`
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
+source /usr/share/chruby/chruby.sh
+source /etc/profile.d/vte.sh
+
+# OPAM configuration
+. /home/joost/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+#default ruby
+chruby 2.3.3
