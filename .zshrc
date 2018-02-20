@@ -62,6 +62,7 @@ plugins=(git svn)
 export GOPATH=$HOME/go
 export PATH="${HOME}/bin:$GOPATH/bin:/usr/local/bin:/usr/bin:/bin"
 export PATH=${HOME}/.local/bin:$PATH  # needed for pipsi
+export PATH=/usr/bin/vendor_perl/:$PATH  # needed for cpan / perl
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
