@@ -15,3 +15,13 @@
 	gpgsign = true
 [rerere]
 	enabled = true
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false
+[merge]
+	tool = sublime
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = mail.joostrijneveld.nl
+	smtpUser = joost
+	smtpServerPort = 587
